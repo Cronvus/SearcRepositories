@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: khaki;
+}
+.container{
+    width: 100%;
+    text-align: center;
+}
+.tittle{
+    padding: 10px;
+}
+.search{
+    width: 300px;
+    height: 30px;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+ul{
+    width: 400px;
+   margin: 0 auto;
+}
+ul li{
+    text-align: left;
+
+    list-style: none;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+}
+.variants{
+
+    cursor: pointer;
+    margin-bottom: 30px;
+    padding-left: 45px;
+}
+.variants li{
+    width: 300px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.add-list{
+    width: 500px;
+}
+.list-item{
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+.remove {
+    background: red;
+    height: 50px;
+    position: relative;
+    width: 5px;
+    padding: 0;
+    left: 400px;
+    border: none;
+    rotate: 45deg;
+}
+.remove::after {
+    background: red;
+    content: '';
+    height: 5px;
+    left: -21px;
+    position: absolute;
+    top: 20px;
+    width: 50px;
+}

@@ -32,11 +32,12 @@ function showVariants(repos) {
 function addRepo(repo){
     const li = document.createElement('li')
     li.className = "list-item"
-    li.innerHTML = `Name: ${repo.name} <br> Owner: ${repo.owner.login} <br> Stars: ${repo.stargazers_count}
+    li.innerHTML = `Name: ${repo.name} <br> Owner: ${repo.owner.login} <br> Stars: ${repo.stargazers_count} <br>
 <button class ='remove' onclick="removeRepo(this)"></button>`
     list.appendChild(li)
-    input.value = ''
-    input.innerHTML = ''
+    input.value = '';
+    input.innerHTML = '';
+    variants.innerHTML= '';
 }
 
 function removeRepo(button){
